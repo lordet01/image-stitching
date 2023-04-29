@@ -225,4 +225,4 @@ def multi_band_blending(images: List[Image], num_bands: int, sigma: float) -> np
         panorama[panorama < 0] = 0
         panorama[panorama > 255] = 255
 
-    return panorama
+    return panorama.astype(np.uint8)

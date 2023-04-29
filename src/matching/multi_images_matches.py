@@ -62,7 +62,7 @@ class MultiImageMatches:
         pair_matches = []
         for i, image_a in enumerate(self.images):
             possible_matches = sorted(
-                self.images[:i] + self.images[i + 1 :],
+                self.images[i:] + self.images[i + 1 :],
                 key=lambda image, ref=image_a: len(self.get_matches(ref, image)),
                 reverse=True,
             )[:max_images]

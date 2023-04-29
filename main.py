@@ -22,7 +22,7 @@ parser = argparse.ArgumentParser(
                  Multiple panoramas can be created at once"
 )
 
-parser.add_argument(dest="data_dir", help="directory containing the images")
+parser.add_argument("--data_dir", default="/DL_data_super_ssd/EFPD_samples/n65", help="directory containing the images")
 parser.add_argument(
     "-mbb",
     "--multi-band-blending",

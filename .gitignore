@@ -28,3 +28,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+*.png
+*.jpg
+*.mp4
